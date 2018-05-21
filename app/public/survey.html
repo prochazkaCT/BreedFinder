@@ -1,0 +1,264 @@
+<head>
+    <meta charset="UTF-8">
+    <title>BreedFinder</title>
+  
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  
+  </head>
+
+  <body>
+
+    <div class="container">
+  
+      <h2>Survey Questions</h2>
+      <hr>
+  
+      <h3><strong>About You</strong></h3>
+      <h4>Name (Required)</h4>
+      <input type="text" id="name" class="form-control" required="">
+      <hr>
+  
+      <h3><strong>Question 1</strong></h3>
+      <h4>What size dog are you interested in?</h4>
+      <select class="chosen-select" id="q1">
+        <option value=""></option>
+        <option value="1">Tiny (up to 11 pounds)</option>
+        <option value="2">Small (12-22 pounds)</option>
+        <option value="3">Medium (23-44 pounds)</option>
+        <option value="4">Large (45-88 pounds)</option>
+        <option value="5">Extra large (89 pounds and over)</option>
+      </select>
+  
+      <h3><strong>Question 2</strong></h3>
+      <h4>How energetic do you want your new dog to be?</h4>
+      <select class="chosen-select" id="q2">
+        <option value=""></option>
+        <option value="1">A marathon runner</option>
+        <option value="2">A jogger</option>
+        <option value="3">A walker</option>
+        <option value="4">A couch (or lap!) potato</option>
+        <option value="5">A little bit of energy and lazy</option>
+      </select>
+  
+  
+      <h3><strong>Question 3</strong></h3>
+      <h4>How much time can you devote to exercising your dog daily?</h4>
+      <select class="chosen-select" id="q3">
+        <option value=""></option>
+        <option value="1">Over 45 minutes</option>
+        <option value="2">30 - 45 minutes</option>
+        <option value="3">20 - 30 minutes</option>
+        <option value="4">15 - 10 minutes</option>
+        <option value="5">None - they can walk themselves</option>
+      </select>
+  
+  
+      <h3><strong>Question 4</strong></h3>
+      <h4>How often will you be able to play with your dog?</h4>
+      <select class="chosen-select" id="q4">
+        <option value=""></option>
+        <option value="1">All day long!</option>
+        <option value="2">About half a day</option>
+        <option value="3">A few times per day</option>
+        <option value="4">Maybe once a day</option>
+        <option value="5">Never (ok...so why are you getting a dog?!)</option>
+      </select>
+  
+  
+      <h3><strong>Question 5</strong></h3>
+      <h4>How affectionate would you like your dog to be?</h4>
+      <select class="chosen-select" id="q5">
+        <option value=""></option>
+        <option value="1">Always snuggling or by your side</option>
+        <option value="2">Gives you some love but can ammuse themselves when your busy</option>
+        <option value="3">More interested in just having some other living creature around the house</option>
+        <option value="4">Not into people at all but looks cute</option>
+        <option value="5">Not important</option>
+      </select>
+  
+  
+      <h3><strong>Question 6</strong></h3>
+      <h4>Do you currently have other pets?</h4>
+      <select class="chosen-select" id="q6">
+        <option value=""></option>
+        <option value="1">Yes -- therefore they will need to get along with other animals.</option>
+        <option value="2">No, but I might someday</option>
+        <option value="3">No, but our neighborhood has a ton of animals so they would need to be friendly.</option>
+        <option value="4">No. I'm looking for a hunting/working dog so I don't care if they are friendly.</option>
+        <option value="5">Not important to me</option>
+      </select>
+  
+  
+      <h3><strong>Question 7</strong></h3>
+      <h4>How trainable would you like your dog to be?</h4>
+      <select class="chosen-select" id="q7">
+        <option value=""></option>
+        <option value="1">Extremely intelligent and very trainable.</option>
+        <option value="2">Somewhat trainable.</option>
+        <option value="3">Not trainable at all - I love a challenge. </option>
+        <option value="4">I have no plans to teach them anything.</option>
+        <option value="5">Not important either way</option>
+      </select>
+  
+      <h3><strong>Question 8</strong></h3>
+      <h4>How protective do you want your new dog to be?</h4>
+      <select class="chosen-select" id="q8">
+        <option value=""></option>
+        <option value="1">Extremely protective - I need a round-the-clock watchdog</option>
+        <option value="2">Somewhat - especially when I am out walking</option>
+        <option value="3">Just a very little</option>
+        <option value="4">None needed</option>
+        <option value="5">Not important to me</option>
+      </select>
+  
+      <h3><strong>Question 9</strong></h3>
+      <h4>How much maintenance and grooming are you willing to do (or pay someone to do)?</h4>
+      <select class="chosen-select" id="q9">
+        <option value=""></option>
+        <option value="1">I would love to groom them mulitple times a day and will take them to the groomer often.</option>
+        <option value="2">I could see grooming them a few times per week and off to the groomer often.</option>
+        <option value="3">I can see spending a couple days per week grooming the dog and will take them occasionally to the groomer.</option>
+        <option value="4">I would prefer a very low maintenance dog.</option>
+        <option value="5">Not important to me</option>
+      </select>
+  
+      <h3><strong>Question 10</strong></h3>
+      <h4>What kind of temperature tolerance does your new dog need?</h4>
+      <select class="chosen-select" id="q10">
+        <option value=""></option>
+        <option value="1">I live in a warm climate, so they will need to tolerate the heat.</option>
+        <option value="2">I live in a cool climate, so they will need to tolerate cooler weather.</option>
+        <option value="3">I live where it is cool in the winter and hot in the summer, so a little bit of both.</option>
+        <option value="4">I live in a moderate climate, so it won't be an issue.</option>
+        <option value="5">They will stay indoors mostly, so it really doesn't matter.</option>
+      </select>
+  
+      <br>
+      <br>
+  
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+       Submit</button>
+  
+      <hr>
+      <footer class="footer">
+        <div class="container">
+          <p><a href="/api/breeds">API Breed List</a> | <a href="https://github.com/prochazkaCT/BreedFinder">GitHub Repo</a></p>
+        </div>
+      </footer>
+  
+    </div>
+  
+    <!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+  
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h2 class="modal-title"><strong>Hello!! Here is your best breed match!!</strong></h2>
+          </div>
+          <div class="modal-body">
+            <h2 id="match-name"></h2>
+            <img id="match-img" src="" alt="dog breed" class="img-rounded img-responsive">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <script type="text/javascript">
+      // Chosen CSS
+      var config = {
+        ".chosen-select": {},
+        ".chosen-select-deselect": {
+          allow_single_deselect: true
+        },
+        ".chosen-select-no-single": {
+          disable_search_threshold: 10
+        },
+        ".chosen-select-no-results": {
+          no_results_text: "Oops, nothing found!"
+        },
+        ".chosen-select-width": {
+          width: "95%"
+        }
+      };
+  
+      for (var selector in config) {
+        $(selector).chosen(config[selector]);
+      }
+  
+      // Capture the form inputs
+      $("#submit").on("click", function(event) {
+        event.preventDefault();
+  
+        // Form validation
+        function validateForm() {
+          var isValid = true;
+          $(".form-control").each(function() {
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
+  
+          $(".chosen-select").each(function() {
+  
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
+          return isValid;
+        }
+  
+        // If all required fields are filled
+        if (validateForm()) {
+          // Create an object for the user"s data
+          var userData = {
+            name: $("#name").val(),
+            scores: [
+              $("#q1").val(),
+              $("#q2").val(),
+              $("#q3").val(),
+              $("#q4").val(),
+              $("#q5").val(),
+              $("#q6").val(),
+              $("#q7").val(),
+              $("#q8").val(),
+              $("#q9").val(),
+              $("#q10").val()
+            ]
+          };
+  
+          // AJAX post the data to the friends API.
+          $.post("/api/breeds", userData, function(data) {
+  
+            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+  
+            // Show the modal with the best match
+            $("#results-modal").modal("toggle");
+  
+          });
+        } else {
+          alert("Please fill out all fields before submitting!");
+        }
+      });
+    </script>  
+  </body>
+</html>
